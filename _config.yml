@@ -1,0 +1,20 @@
+title:       Geometrical and Topological Representation Learning
+description: Workshop at ICLR 2021
+
+timezone: America/Toronto
+
+navigation:
+  Home: "/"
+  Call for Papers: "/cfp"
+  Organizers: "/organizers"
+
+markdown: kramdown
+
+kramdown:
+  parse_span_html: true
+  parse_block_html: true
+
+plugins:
+  - jekyll-seo-tag
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
