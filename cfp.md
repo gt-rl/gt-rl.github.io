@@ -60,7 +60,6 @@ workshop, feel free to contact us at [workshop@topology.rocks](mailto:workshop@t
 # Style
 
 We only accept submissions that have been prepared using LaTeX. Use the
-following workshop style files for your submission (the PDF file is
-provided as a preview of the expected style):
+following workshop style files for your submission:
 
-TBD
+- [gtrl2021.zip](/assets/gtrl2021.zip)
