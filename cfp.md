@@ -15,11 +15,14 @@ anonymized.
 This workshop is **non-archival**; even though all accepted papers will be
 available on OpenReview, there are *no* formally-published proceedings.
 
+| **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2021/Workshop/GTRL) |
+| **Submission deadline** | Friday, 26 February 2021 (23:59 AoE) |
+
 # Scope and topics
 
 Please find a list of topics of interest, sorted alphabetically. If
 you are not sure whether your topic might be a good fit for the
-workshop, feel free to contact us at [workshop@topology.rocks](mailto:workshop@topology.rocks).
+workshop, feel free to contact us at [geometry@topology.rocks](mailto:geometry@topology.rocks).
 
 - **Approximations**: Can we approximate parts of the computational
   pipeline in topological data analysis, for example when calculating
