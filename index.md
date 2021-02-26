@@ -4,7 +4,7 @@ layout: default
 
 # Overview
 
-| **Date** |  Saturday, 8 May 2021 |
+| **Date** |  Friday, 7 May 2021 |
 | **Location** | The workshop will be held *virtually*. |
 | **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2021/Workshop/GTRL) |
 | **Submission deadline** | Friday, 26 February 2021 (23:59 AoE) |
