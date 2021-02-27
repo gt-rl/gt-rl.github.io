@@ -7,7 +7,7 @@ layout: default
 | **Date** |  Friday, 7 May 2021 |
 | **Location** | The workshop will be held *virtually*. |
 | **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2021/Workshop/GTRL) |
-| **Submission deadline** | Friday, 26 February 2021 (23:59 AoE) |
+| **Submission deadline** | ~~Friday, 26 February 2021 (23:59 AoE)~~ Monday, 1 March 2021 (23:59 AoE) |
 
 This is the homepage for our [ICLR 2021](https://iclr.cc/Conferences/2021) workshop on 'Geometric and Topological
 Representation Learning'. Stay tuned for more information!
