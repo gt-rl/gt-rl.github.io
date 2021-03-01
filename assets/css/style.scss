@@ -67,3 +67,20 @@ td {
 abstract {
   font-size: 0.90rem;
 }
+
+.orgWrapper{
+  display: flex
+}
+
+.orgWrapper img{
+  height: auto;
+  flex: 0 1 33.33%;
+  max-width: inherit;
+}
+
+.bioWrapper{
+  height: auto;
+  flex: 0 1 100%;
+  max-width: inherit;
+  padding-left: 1em;
+}
