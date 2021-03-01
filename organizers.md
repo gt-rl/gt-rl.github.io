@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Organisers
+# Organizers
 
 <div class='orgWrapper'>
 <img align="left" src="https://scholars.duke.edu/file/t5068122/thumb_image_5068122.jpg" alt="Xiuyuan Cheng" width="150">
@@ -88,7 +88,15 @@ on real-time personalisation and causal analysis for recommendations.
 </div>
 </div>
 
-# Student Organisers
+# Student Organizers
+<div class='orgWrapper'>
+<img src="https://gt-rl.github.io/assets/images/cb.png" alt="Christian Bock" width="150" />
+<div class='bioWrapper'>
+[**Christian Bock**](https://christian.bock.ml)
+Christian is a fourth year PhD Candidate at ETH Zürich, Switzerland (<a href="https://bsse.ethz.ch/mlcb">MLCB</a>) focusing on the development and application of machine learning algorithms for time series and graph-structured data. His research happens at different locations in the Venn diagram of Topological Data Analysis, Gaussian Processes, Pattern Mining, and Time Series. He holds a master's degree in medical informatics and is particularly interested in the development of methods for the healthcare field. 
+</div>
+</div>
+
 <div class='orgWrapper'>
 <img src="https://gt-rl.github.io/assets/images/mh.png" alt="Max Horn" width="150" />
 <div class='bioWrapper'>
@@ -102,14 +110,5 @@ Max is a PhD student in the Machine Learning and Computational Biology Lab, ETH 
 <div class='bioWrapper'>
 [**Michael Moor**](https://www.michaelmoor.ml/)
 Michael is an MD who currently pursues a PhD in the Machine Learning and Computational Biology Lab at ETH Zurich. His research focuses on developing machine learning models for time series, foremost in healthcare applications, whereas a large focus has been on the prediction of sepsis from streamed monitoring data in the ICU. Michael is interested in all kinds of differentiable models for representation learning and time series classification. Furthermore, he is also exploring more mathy flavours of machine learning such as topological data analysis or path signatures.
-</div>
-</div>
-
-
-<div class='orgWrapper'>
-<img src="https://gt-rl.github.io/assets/images/cb.png" alt="Christian Bock" width="150" />
-<div class='bioWrapper'>
-[**Christian Bock**](https://christian.bock.ml)
-Christian is a fourth year PhD Candidate at ETH Zürich, Switzerland (<a href="https://bsse.ethz.ch/mlcb">MLCB</a>) focusing on the development and application of machine learning algorithms for time series and graph-structured data. His research happens at different locations in the Venn diagram of Topological Data Analysis, Gaussian Processes, Pattern Mining, and Time Series. He holds a master's degree in medical informatics and is particularly interested in the development of methods for the healthcare field. 
 </div>
 </div>
