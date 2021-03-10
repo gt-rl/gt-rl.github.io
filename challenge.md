@@ -8,7 +8,7 @@ Modern real-world data typically have high dimensional ambient measurement space
 
 The purpose of this challenge is to push forward the fields of computational differential geometry and topology, by creating the best data analysis, computational method, or numerical experiment relying on state-of-the-art geometric and topological Python packages.
 
-For more details, visit the GitHub repository of the challenge: https://github.com/geomstat/challenge-iclr-2021.
+For more details, visit the GitHub repository of the challenge: [https://github.com/geomstat/challenge-iclr-2021](https://github.com/geomstat/challenge-iclr-2021).
 
 ## Deadline:
 
