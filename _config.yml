@@ -6,6 +6,7 @@ timezone: America/Toronto
 navigation:
   Home: "/"
   Call for Papers: "/cfp"
+  Challenge: "/challenge"
   Organizers: "/organizers"
 
 markdown: kramdown
