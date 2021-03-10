@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# ICLR Computational Geometry & Topology Challenge 2021
+# Computational Geometry & Topology Challenge 2021
 
 Modern real-world data typically have high dimensional ambient measurement spaces. Yet, they often exhibit low dimensional intrinsic structures that can be uncovered by geometry- or topology- oriented methods. As a result, recent years have seen significant interest and progress in geometric and topological approaches to representation learning.
 
