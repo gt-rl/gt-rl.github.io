@@ -6,7 +6,7 @@ layout: default
 
 Modern real-world data typically have high dimensional ambient measurement spaces. Yet, they often exhibit low dimensional intrinsic structures that can be uncovered by geometry- or topology- oriented methods. As a result, recent years have seen significant interest and progress in geometric and topological approaches to representation learning.
 
-The purpose of this challenge is to push forward the fields of computational differential geometry and topology, by creating the best data analysis, computational method, or numerical experiment relying on state-of-the-art geometric and topological Python packages.
+The purpose of this challenge is to push forward the fields of computational differential geometry and topology, by creating the best data analysis, computational method, or numerical experiment relying on state-of-the-art geometric and topological Python packages. All participants will have the opportunity to co-author a white paper summarizing the findings of the challenge.
 
 For more details, visit the GitHub repository of the challenge: [https://github.com/geomstats/challenge-iclr-2021](https://github.com/geomstats/challenge-iclr-2021).
 
