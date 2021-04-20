@@ -7,6 +7,12 @@ layout: default
 We are happy to feature the following awesome speakers&nbsp;(this list
 is expanded on a rolling basis, stay tuned for more!):
 
+## Théo Lacombe 
+
+| <img src="/assets/images/speakers/tl.jpg" alt="Théo Lacombe" height="250px" /> |
+| **Foundations Talk on Topological Data Analysis** |
+| This talk provides a short introduction to topological data analysis (TDA), a recent field in data sciences whose goal is to extract topological information from complex objects (graphs, time series, manifold). The presentation focuses on persistence diagrams (PDs), a very common topological descriptor, targeting statistical and learning applications. We present the standard metrics used to compare PDs and discuss their relation with Optimal Transport problems, an important connection when it comes to develop new theoretical and numerical tools in TDA. |
+
 ## Marinka Zitnik
 
 | <img src="/assets/images/speakers/mz.jpg" alt="Marinka Zitnik" height="250px" /> |
