@@ -7,11 +7,29 @@ layout: default
 We are happy to feature the following awesome speakers&nbsp;(this list
 is expanded on a rolling basis, stay tuned for more!):
 
+## Javier Arsuaga
+
+| <img src="/assets/images/speakers/ja.jpg" alt="Javier Arsuaga" height="250px" /> |
+
+## Fernando Gama
+
+| <img src="/assets/images/speakers/fg.jpg" alt="Fernando Gama" height="250px" /> |
+
 ## Théo Lacombe 
 
 | <img src="/assets/images/speakers/tl.jpg" alt="Théo Lacombe" height="250px" /> |
 | **Foundations Talk on Topological Data Analysis** |
 | This talk provides a short introduction to topological data analysis (TDA), a recent field in data sciences whose goal is to extract topological information from complex objects (graphs, time series, manifold). The presentation focuses on persistence diagrams (PDs), a very common topological descriptor, targeting statistical and learning applications. We present the standard metrics used to compare PDs and discuss their relation with Optimal Transport problems, an important connection when it comes to develop new theoretical and numerical tools in TDA. |
+
+## Yan Leng
+
+| <img src="/assets/images/speakers/yl.jpg" alt="Yan Leng" height="250px" /> |
+| **Interpretable Recommender System With Heterogeneous Information: A Geometric Deep Learning Perspective** |
+| Recommender systems (RS) are ubiquitous in digital space. This paper develops a deep learning-based approach to address three practical challenges in RS: complex structures of high-dimensional data, noise in relational information, and the black-box nature of machine learning algorithms. Our method—Multi-GraphGraph Attention Network (MG-GAT)—learns latent user and business representations by aggregating a diverse set of information from neighbors of each user (business) on a neighbor importance graph. MG-GAT out-performs state-of-the-art deep learning models in the recommendation task using two large-scale datasets collected from Yelp and four other standard datasets in RS. The improved performance highlights MG-GAT’s advantage in incorporating multi-modal features in a principled manner. The features importance, neighbor importance graph, and latent representations reveal business insights on predictive features and explainable characteristics of business and users. Moreover, the learned neighbor importance graph can be used in a variety of management applications, such as targeting customers, promoting new businesses, and designing information acquisition strategies. Our paper presents a quintessential big data application of deep learning models in management while providing interpretability essential for real-world decision-making. |
+
+## Gal Mishne
+
+| <img src="/assets/images/speakers/gm.jpg" alt="Gal Mishne" height="250px" /> |
 
 ## Marinka Zitnik
 
