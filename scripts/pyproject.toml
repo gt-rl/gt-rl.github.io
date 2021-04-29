@@ -8,6 +8,9 @@ authors = ["Bastian Rieck <bastian.rieck@bsse.ethz.ch>"]
 python = ">=3.8"
 pandas = "^1.2.2"
 openreview-py = "^1.0.20"
+requests = "^2.25.1"
+python-slugify = "^4.0.1"
+filetype = "^1.0.7"
 
 [tool.poetry.dev-dependencies]
 
