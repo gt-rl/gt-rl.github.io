@@ -10,6 +10,7 @@ navigation:
   Speakers: "/speakers"
   Organizers: "/organizers"
   Accepted Papers: "/papers"
+  Schedule: "https://iclr.cc/virtual/2021/workshop/2137"
 
 markdown: kramdown
 
