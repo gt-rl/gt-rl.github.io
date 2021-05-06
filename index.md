@@ -12,8 +12,8 @@ layout: default
 This is the homepage for our [ICLR 2021](https://iclr.cc/Conferences/2021) workshop on 'Geometric and Topological
 Representation Learning'.
 
-You can find our *Gather.Town* instance under https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021. Please note that you need
-to be logged in with your ICLR account to access the site.
+You can find our *Gather.Town* instance [here](https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021).
+Please note that you need to be logged in with your ICLR account to access the site.
 
 # Background
 
