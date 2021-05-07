@@ -66,6 +66,7 @@ if __name__ == '__main__':
         'g',
         'h',
         's',
+        't',
         'n',
         'j',
         'figure',
@@ -77,6 +78,9 @@ if __name__ == '__main__':
         'et',
         'al',
         'point',
+        'ICLR',
+        'international',
+        'conference',
     ])
 
     wc = WordCloud(
