@@ -87,4 +87,6 @@ if __name__ == '__main__':
         reviewers[name].append(review.content['review'])
 
     contributors.update(reviewers.keys())
-    print(contributors)
+
+    for contributor in sorted(contributors):
+        print(contributor)
