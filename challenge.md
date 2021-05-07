@@ -29,4 +29,29 @@ We are looking forward to your contributions!
 
 ## Results:
 
-The winners of the challenge will be announced soon here. Stay tuned!
+All submissions to the challenge were of very high quality. We would like to first congratulate all of the participants! We encourage the readers to take a look at the participants' notebooks on GitHub: [https://github.com/geomstats/challenge-iclr-2021](https://github.com/geomstats/challenge-iclr-2021).
+
+The winners were decided using the [Condorcet Method](https://github.com/geomstats/challenge-iclr-2021/blob/main/README.md#evaluation-and-ranking).
+
+We are now excited to announce the best contributions to open-source computational geometry and topology of ICLR 2021! 
+
+### Winner 1st place ($2000):
+
+Matei Bejan, Bogdan Luchian, Andrei Manolache, Armand Nicolicioiu, Mihaela Nistor, Mihai Sorin Stupariu
+
+[Topological noise invariant features using Giotto-TDA and Geomstats](https://github.com/geomstats/challenge-iclr-2021/blob/main/mihaelanistor/noise_invariant_topological_features.ipynb) 
+
+<img src="assets/images/mihaelanistor_png.png" alt="Topological Noise Invariant Features: Pipeline using Giotto-TDA and Geomstats" width="800" />
+
+### Co-winners for 2nd and 3rd place ($750 each):
+
+- Saiteja Utpala: [Shrinkage Estimator of SPD matrices & Recursive Karcher Expectation Estimator](https://github.com/geomstats/challenge-iclr-2021/tree/main/SaitejaUtpala)
+- Elodie Maignant: [Visualization of Kendall shape spaces for triangles](https://github.com/geomstats/challenge-iclr-2021/blob/main/emaignant/submission_visualization_of_kendall_shape_spaces_for_triangles.ipynb)
+
+### Special mentions:
+- Gabriele Corso: [Neural Sequence Distance Embeddings](https://github.com/geomstats/challenge-iclr-2021/blob/main/gcorso/Neural_SEED.ipynb)
+- Somesh Mohapatra:  [Repurposing peptide inhibitors for SARS-Cov-2 spike protein](https://github.com/geomstats/challenge-iclr-2021/blob/main/SomeshMohapatra/Protein_Peptide_Interactions-TDA.ipynb)
+
+Congratulations to all!!
+
+The organizers will be in touch with the winners to distribute the prizes, and in touch with all the participants to write the white paper summarizing the findings of the challenge.
