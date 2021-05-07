@@ -46,25 +46,22 @@ if __name__ == '__main__':
             id='ICLR.cc/2021/Workshop/GTRL/Area_Chairs').members:
         all_profiles.append(client.get_profile(member))
 
-    #for note in notes:
-    #    author_ids = note.content['authorids']
+    for note in notes:
+        author_ids = note.content['authorids']
 
-    #    for author_id in author_ids:
-    #        if '@' in author_id:
-    #            try:
-    #                profile = client.get_profile(author_id)
-    #            except OpenReviewException:
-    #                contributors.add(author_id)
-    #                continue
-    #        else:
-    #            profile = client.search_profiles(ids=[author_id])[0]
-    #            all_profiles.add(profile)
+        for author_id in author_ids:
+            if '@' in author_id:
+                try:
+                    profile = client.get_profile(author_id)
+                except OpenReviewException:
+                    contributors.add(author_id)
+                    continue
+            else:
+                profile = client.search_profiles(ids=[author_id])[0]
+                all_profiles.append(profile)
 
     for profile in all_profiles:
         contributors.add(get_full_name(profile))
-
-    for contributor in sorted(contributors):
-        print(contributor)
 
     reviewers = collections.defaultdict(list)
 
@@ -89,16 +86,5 @@ if __name__ == '__main__':
 
         reviewers[name].append(review.content['review'])
 
-    for reviewer in reviewers:
-        print(reviewer)
-        print(f'- {len(reviewers[reviewer])} reviews')
-
-        n_words = sum(
-            [
-                len(review.split()) for review in reviewers[reviewer]
-            ]
-        )
-
-        print(f'- {n_words} words')
-
-    #print(notes)
+    contributors.update(reviewers.keys())
+    print(contributors)
