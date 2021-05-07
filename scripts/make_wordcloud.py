@@ -1,8 +1,6 @@
 """Create wordclout from submissions."""
 
 import io
-import json
-import numpy as np
 import openreview
 import requests
 
@@ -10,7 +8,6 @@ import matplotlib.pyplot as plt
 
 from tqdm import tqdm
 
-from PIL import Image
 from pdfminer.high_level import extract_text
 
 from wordcloud import WordCloud, STOPWORDS
