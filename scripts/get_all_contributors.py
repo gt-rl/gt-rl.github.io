@@ -1,11 +1,16 @@
 """Get author information for workshop papers."""
 
 import collections
+import locale
 import openreview
 import os
 
 from dotenv import load_dotenv
+
+from functools import cmp_to_key
+
 from openreview.openreview import OpenReviewException
+
 from requests.exceptions import HTTPError
 
 load_dotenv()
@@ -28,6 +33,8 @@ def get_full_name(profile):
 
 
 if __name__ == '__main__':
+
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
     client = openreview.Client(
         baseurl='https://api.openreview.net',
@@ -88,5 +95,5 @@ if __name__ == '__main__':
 
     contributors.update(reviewers.keys())
 
-    for contributor in sorted(contributors):
+    for contributor in sorted(contributors, key=cmp_to_key(locale.strcoll)):
         print(contributor)
