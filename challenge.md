@@ -26,3 +26,7 @@ The prizes are:
 -  500$ for the 3rd place.
 
 We are looking forward to your contributions!
+
+## Results:
+
+The winners of the challenge will be announced soon here. Stay tuned!
