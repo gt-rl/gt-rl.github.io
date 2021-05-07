@@ -11,6 +11,10 @@ openreview-py = "^1.0.20"
 requests = "^2.25.1"
 python-slugify = "^4.0.1"
 filetype = "^1.0.7"
+matplotlib = "^3.4.1"
+wordcloud = "^1.8.1"
+"pdfminer.six" = "^20201018"
+python-dotenv = "^0.17.1"
 
 [tool.poetry.dev-dependencies]
 
