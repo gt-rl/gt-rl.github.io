@@ -1,10 +1,12 @@
 """Get author information for workshop papers."""
 
+import collections
 import openreview
 import os
 
 from dotenv import load_dotenv
 from openreview.openreview import OpenReviewException
+from requests.exceptions import HTTPError
 
 load_dotenv()
 
@@ -33,28 +35,70 @@ if __name__ == '__main__':
         password=os.getenv('OPENREVIEW_PASSWORD')
     )
 
-    accepted_papers = client.get_notes(
-        content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
-    )
-
     notes = client.get_notes(
         content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
     )
 
-    authors = set()
+    all_profiles = []
+    contributors = set()
 
-    for note in notes:
-        author_ids = note.content['authorids']
+    for member in client.get_group(
+            id='ICLR.cc/2021/Workshop/GTRL/Area_Chairs').members:
+        all_profiles.append(client.get_profile(member))
 
-        for author_id in author_ids:
-            if '@' in author_id:
-                try:
-                    profile = client.get_profile(author_id)
-                except OpenReviewException:
-                    authors.add(author_id)
-                    continue
-            else:
-                profile = client.search_profiles(ids=[author_id])[0]
-            authors.add(get_full_name(profile))
+    #for note in notes:
+    #    author_ids = note.content['authorids']
 
-    print(sorted(authors))
+    #    for author_id in author_ids:
+    #        if '@' in author_id:
+    #            try:
+    #                profile = client.get_profile(author_id)
+    #            except OpenReviewException:
+    #                contributors.add(author_id)
+    #                continue
+    #        else:
+    #            profile = client.search_profiles(ids=[author_id])[0]
+    #            all_profiles.add(profile)
+
+    for profile in all_profiles:
+        contributors.add(get_full_name(profile))
+
+    for contributor in sorted(contributors):
+        print(contributor)
+
+    reviewers = collections.defaultdict(list)
+
+    for review in openreview.tools.iterget_notes(
+        client,
+        invitation='ICLR.cc/2021/Workshop/GTRL/Paper.*/-/Official_Review'
+    ):
+        assert len(review.signatures) == 1
+
+        try:
+            members = client.get_group(id=review.signatures[0]).members
+        except OpenReviewException:
+            continue
+        except HTTPError:
+            continue
+
+        # We only expect a single reviewer here.
+        assert len(members) == 1
+
+        profile = client.get_profile(members[0])
+        name = get_full_name(profile)
+
+        reviewers[name].append(review.content['review'])
+
+    for reviewer in reviewers:
+        print(reviewer)
+        print(f'- {len(reviewers[reviewer])} reviews')
+
+        n_words = sum(
+            [
+                len(review.split()) for review in reviewers[reviewer]
+            ]
+        )
+
+        print(f'- {n_words} words')
+
+    #print(notes)
