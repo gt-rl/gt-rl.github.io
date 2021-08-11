@@ -10,7 +10,7 @@ The purpose of this challenge is to push forward the fields of computational dif
 
 For more details, visit the GitHub repository of the challenge: [https://github.com/geomstats/challenge-iclr-2021](https://github.com/geomstats/challenge-iclr-2021).
 
-The challenge is over now! Please read
+**The challenge is over now!** Please read
 [The Official ICLR 2021 Challenge for Computational Geometry & Topology: Design and Results](/assets/ICLR_2021_GTRL_Challenge.pdf)
 white paper for details on the submissions.
 
