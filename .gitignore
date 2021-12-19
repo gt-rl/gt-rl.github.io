@@ -1,8 +1,11 @@
 .DS_Store
 
-Gemfile.lock
+bin/
+cache/
+extensions/
+gems/
+specifications/
 
 _site/
 .sass-cache/
 
-gems/

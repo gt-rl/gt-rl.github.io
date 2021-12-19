@@ -1,6 +1,6 @@
 # Geometric and Topological Representation Learning (GTRL)
 
-This is the repository for the web page of our ICLR 2021 Workshop on
+This is the repository for the web pages of our ICLR Workshop Series on
 Geometrical and Topological Representation Learning. Please visit
 [gt-rl.github.io](https://gt-rl.github.io)
 for more information.
