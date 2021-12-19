@@ -4,18 +4,22 @@ layout: default
 
 # Overview
 
+This is the homepage for our [ICLR 2022](https://iclr.cc/Conferences/2022) workshop on 'Geometric and Topological
+Representation Learning'.
+
+<!--
+
 | **Date** |  Friday, 7 May 2021 |
 | **Location** | The workshop will be held *virtually*. |
 | **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2021/Workshop/GTRL) |
 | **Submission deadline** | ~~Friday, 26 February 2021 (23:59 AoE)~~ Sunday, 7 March 2021 (23:59 AoE) |
 
-This is the homepage for our [ICLR 2021](https://iclr.cc/Conferences/2021) workshop on 'Geometric and Topological
-Representation Learning'.
-
 You can find our *Gather.Town* instance [here](https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021).
 Please note that you need to be logged in with your ICLR account to access the site.
 
-The workshop is finished but please consider joining our Slack Community [Geometry and Topology in ML](https://tda-in-ml.slack.com/join/shared_invite/enQtOTIyMTIyNTYxMTM2LTA2YmQyZjVjNjgxZWYzMDUyODY5MjlhMGE3ZTI1MzE4NjI2OTY0MmUyMmQ3NGE0MTNmMzNiMTViMjM2MzE4OTc#/) to stay up-to-date with upcoming events, ask questions, and be part of a vibrant, diverse scientific community. 
+-->
+
+Consider joining our Slack Community [Geometry and Topology in ML](https://tda-in-ml.slack.com/join/shared_invite/enQtOTIyMTIyNTYxMTM2LTA2YmQyZjVjNjgxZWYzMDUyODY5MjlhMGE3ZTI1MzE4NjI2OTY0MmUyMmQ3NGE0MTNmMzNiMTViMjM2MzE4OTc#/) to stay up-to-date with upcoming events, ask questions, and be part of a vibrant, diverse scientific community. 
 
 # Background
 
