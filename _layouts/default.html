@@ -30,7 +30,14 @@
         <img src="{{ page.image | default: site.logo }}" alt="{{ page.title | default: site.title }}" class="project-name" />
       </div>
       {% endif %}
-      {% for item in site.navigation %}
+
+      {% if page.navigation == nil %}
+        {% assign navigation = site.navigation %}
+      {% else %}
+      {% assign navigation = site[page.navigation] %}
+      {% endif %}
+
+      {% for item in navigation %}
       <a href="{{ item[1] }}" class="btn">{{ item[0] }}</a>
       {% endfor %}
     </header>
