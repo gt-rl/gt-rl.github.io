@@ -1,25 +1,22 @@
-title:       Geometrical and Topological Representation Learning
-description: Workshop at ICLR 2022
+title:       ICLR Workshop on Geometrical and Topological Representation Learning
 
 timezone: America/Toronto
 
 navigation:
   Home: "/"
-  Gather.Town: "https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021"
   Call for Papers: "/cfp"
   Speakers: "/speakers"
   Organizers: "/organizers"
   Past Events: "/past"
 
-navigation_2021:
-  Home: "/"
+2021:
+  Home: "/2021/"
   Gather.Town: "https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021"
-  Call for Papers: "/cfp"
-  Challenge: "/challenge"
-  Speakers: "/speakers"
-  Organizers: "/organizers"
-  Past Events: "/past"
-  Accepted Papers: "/papers"
+  Call for Papers: "/2021/cfp"
+  Challenge: "/2021/challenge"
+  Speakers: "/2021/speakers"
+  Organizers: "/2021/organizers"
+  Accepted Papers: "/2021/papers"
   Schedule: "https://iclr.cc/virtual/2021/workshop/2137"
 
 markdown: kramdown
