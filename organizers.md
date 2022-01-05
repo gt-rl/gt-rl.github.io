@@ -23,6 +23,14 @@ on real-time personalisation and causal analysis for recommendations.
 </div>
 
 <div class='orgWrapper'>
+<img src="https://gt-rl.github.io/assets/images/nm.jpg" alt="Nina Miolane" width="150" />
+<div class='bioWrapper'>
+[**Nina Miolane**](https://www.ece.ucsb.edu/people/faculty/nina-miolane) is an Assistant Professor at the University of California, Santa Barbara (UCSB) in Computational Biomedicine. She holds an M.S. in Mathematics from Ecole Polytechnique (France) & Imperial College (UK), and a Ph.D. in Computer Science from INRIA (France) in collaboration with Stanford University. After her studies, Nina spent two years at Stanford University in Statistics as a postdoctoral fellow, and worked as a deep learning software engineer in the Silicon Valley. At UCSB, Nina directs the [BioShape Lab](https://bioshape.ece.ucsb.edu/), whose goal is to explore the “geometries of life” and turn biological shapes into biomedical insights. The BioShape Lab also co-develops [Geomstats](https://github.com/geomstats/geomstats), an open-source software for geometric statistics and (deep) learning.
+</div>
+</div>
+
+
+<div class='orgWrapper'>
 <img align="left" src="https://tda-in-ml.github.io/assets/images/br.jpg" alt="Bastian Rieck" width="150">
 <div class='bioWrapper'>
 [**Bastian Rieck**](https://bastian.rieck.me) is the principal
