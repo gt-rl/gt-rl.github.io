@@ -16,12 +16,8 @@ papers.
 This workshop is **non-archival**; even though all accepted papers will be
 available on OpenReview, there are *no* formally-published proceedings.
 
-<!-- 
-
 | **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2022/Workshop/GTRL) |
-| **Submission deadline** | ~~Friday, 26 February 2021 (23:59 AoE)~~ Sunday, 7 March 2021 (23:59 AoE) |
-
--->
+| **Submission deadline** | Friday, 25 February 2022 (23:59 AoE) |
 
 # Scope and topics
 
@@ -29,13 +25,15 @@ Please find a list of topics of interest. If
 you are not sure whether your topic might be a good fit for the
 workshop, feel free to contact us at [geometry@topology.rocks](mailto:geometry@topology.rocks).
 
+- Applications of geometry- or topology-based models
 - Approximation schemes in topological data analysis
 - Big data and scalability aspects
 - Graph representation learning
 - Higher-order features of unstructured and structured data sets
-- Message passing and beyond
-- Topological machine learning
 - Manifold learning at scale
+- Message passing and beyond
+- New datasets and benchmarks 
+- Topological machine learning
 
 # Style
 
