@@ -4,7 +4,7 @@ layout: default
 
 # Overview
 
-This is the homepage for our [ICLR 2022](https://iclr.cc/Conferences/2022) workshop on 'Geometric and Topological
+This is the homepage for our [ICLR 2022](https://iclr.cc/Conferences/2022) workshop on 'Geometrical and Topological
 Representation Learning'.
 
 <!--
