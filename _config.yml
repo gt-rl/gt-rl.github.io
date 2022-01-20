@@ -6,6 +6,7 @@ timezone: America/Toronto
 navigation:
   Home: "/"
   Call for Papers: "/cfp"
+  Challenge: "https://github.com/geomstats/challenge-iclr-2022"
   Speakers: "/speakers"
   Organizers: "/organizers"
   Past Events: "/past"
