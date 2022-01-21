@@ -1,17 +1,12 @@
 """Get reviewer information for workshop papers."""
 
-import collections
 import locale
 import openreview
 import os
 
 from dotenv import load_dotenv
 
-from functools import cmp_to_key
-
 from openreview.openreview import OpenReviewException
-
-from requests.exceptions import HTTPError
 
 load_dotenv()
 
