@@ -67,4 +67,10 @@ if __name__ == '__main__':
         email = profile.content.get(
             'preferredEmail', profile.content['emails'][0]
         )
-        print(' ', email)
+
+        addresses.append(email)
+
+    addressses = set(addresses)
+
+    for email in addressses:
+        print(email)
