@@ -42,26 +42,22 @@ if __name__ == '__main__':
         password=os.getenv('OPENREVIEW_PASSWORD')
     )
 
-    #notes = client.get_notes(
-    #    content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
-    #)
-
-    #print(notes)
-
     reviewers = []
     addresses = []
 
-    for member in client.get_group(
-            id='ICLR.cc/2021/Workshop/GTRL/Reviewers').members:
-        try:
-            if '@' in member:
-                addresses.append(member)
-            else:
-                profile = client.search_profiles(ids=[member])[0]
-        except OpenReviewException:
-            pass
+    for id in ['ICLR.cc/2021/Workshop/GTRL/Reviewers',
+               'NeurIPS.cc/2020/Workshop/TDA_and_Beyond/Reviewers']:
 
-        reviewers.append(profile)
+        for member in client.get_group(id=id).members:
+            try:
+                if '@' in member:
+                    addresses.append(member)
+                else:
+                    profile = client.search_profiles(ids=[member])[0]
+            except OpenReviewException:
+                pass
+
+            reviewers.append(profile)
 
     for profile in reviewers:
         email = profile.content.get(
@@ -72,5 +68,5 @@ if __name__ == '__main__':
 
     addressses = set(addresses)
 
-    for email in addressses:
+    for email in sorted(addressses):
         print(email)
