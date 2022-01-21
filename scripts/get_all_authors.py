@@ -1,15 +1,22 @@
 """Get author information for workshop papers."""
 
+from dotenv import load_dotenv
+
 import openreview
+import os
 
 from openreview.openreview import OpenReviewException
+
+
+load_dotenv()
 
 
 if __name__ == '__main__':
 
     client = openreview.Client(
         baseurl='https://api.openreview.net',
-        username='bastian.rieck@bsse.ethz.ch',
+        username=os.getenv('OPENREVIEW_USER'),
+        password=os.getenv('OPENREVIEW_PASSWORD')
     )
 
     accepted_papers = client.get_notes(
