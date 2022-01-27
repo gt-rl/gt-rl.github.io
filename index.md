@@ -7,12 +7,16 @@ layout: default
 This is the homepage for our [ICLR 2022](https://iclr.cc/Conferences/2022) workshop on 'Geometrical and Topological
 Representation Learning'.
 
-<!--
+## Information for participants
 
-| **Date** |  Friday, 7 May 2021 |
+| **Date** |  Friday, 29 April 2022 |
 | **Location** | The workshop will be held *virtually*. |
-| **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2021/Workshop/GTRL) |
-| **Submission deadline** | ~~Friday, 26 February 2021 (23:59 AoE)~~ Sunday, 7 March 2021 (23:59 AoE) |
+| **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2022/Workshop/GTRL) |
+| **Submission deadline** | Friday, 25 February 2022 (23:59 AoE) |
+| **Reviewing phase** (tentative) | Saturday, 26 February 2022 to Friday, 25 March 2022 |
+| **Notification** (tentative) | Saturday, 26 March 2022 |
+
+<!--
 
 You can find our *Gather.Town* instance [here](https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021).
 Please note that you need to be logged in with your ICLR account to access the site.
