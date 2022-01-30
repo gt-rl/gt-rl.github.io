@@ -28,6 +28,7 @@ workshop, feel free to contact us at [geometry@topology.rocks](mailto:geometry@t
 - Applications of geometry- or topology-based models
 - Approximation schemes in topological data analysis
 - Big data and scalability aspects
+- Equivariant neural networks
 - Graph representation learning
 - Higher-order features of unstructured and structured data sets
 - Manifold learning at scale
