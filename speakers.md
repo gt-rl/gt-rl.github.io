@@ -20,6 +20,7 @@ layout: default
 ## Panellists
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
+- [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 - [Christopher Morris](https://chrsmrrs.github.io), Mila – Quebec AI Institute \& McGill University
 
 More speakers to be listed soon!
