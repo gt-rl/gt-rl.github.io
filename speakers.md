@@ -20,6 +20,7 @@ layout: default
 ## Panellists
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
+- [Sergey Ivanov](https://nd7141.github.io/), Criteo AI Labs
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 - [Christopher Morris](https://chrsmrrs.github.io), Mila – Quebec AI Institute \& McGill University
 
