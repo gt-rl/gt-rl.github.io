@@ -13,9 +13,30 @@ layout: default
 </div>
 </div>
 
+## Invited talks
+
+<div class='orgWrapper'>
+<img align="left" src="/assets/images/sj.jpg" alt="Stefanie Jegelka" width="150">
+<div class='bioWrapper'>
+[**Stefanie Jegelka**](https://people.csail.mit.edu/stefje/)
+is an X-Consortium Career Development Associate
+Professor in the Department of EECS at MIT. She is a member of the
+Computer Science and AI Lab (CSAIL), the Center for Statistics and an
+affiliate of IDSS and ORC. Before joining MIT, she was a postdoctoral
+researcher at UC Berkeley, and obtained her PhD from ETH Zurich and the
+Max Planck Institute for Intelligent Systems. Stefanie has received
+a Sloan Research Fellowship, an NSF CAREER Award, a DARPA Young Faculty
+Award, a Google research award, a Two Sigma faculty research award, the
+German Pattern Recognition Award and a Best Paper Award at the
+International Conference for Machine Learning (ICML). Her research
+interests span the theory and practice of algorithmic machine learning.
+</div>
+</div>
+
 ## Case studies
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
+- [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 
 ## Panellists
 
