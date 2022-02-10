@@ -36,6 +36,9 @@ workshop, feel free to contact us at [geometry@topology.rocks](mailto:geometry@t
 - New datasets and benchmarks 
 - Topological machine learning
 
+We are also happy to accept position or opinion papers on the state of
+the art as well as the future of topics listed above.
+
 # Style
 
 We only accept submissions that have been prepared using LaTeX. Use the
