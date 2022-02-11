@@ -40,6 +40,20 @@ interests span the theory and practice of algorithmic machine learning.
 </div>
 </div>
 
+<div class='orgWrapper'>
+<img align="left" src="/assets/images/ct.png" alt="Chad Topaz" width="150">
+<div class='bioWrapper'>
+[**Chad Topaz**](https://chadtopaz.com) (A.B. Harvard, Ph.D. Northwestern)
+is an applied mathematician and data scientist. His current research
+applies quantitative tools to expose and remedy social injustice, and is
+based out of the Institute for the Quantitative Study of Inclusion,
+Diversity, and Equity (QSIDE), which he co-founded. Chad is also
+Professor of Mathematics at Williams College and, previously, at
+Macalester College, where his research on complex and nonlinear systems
+has been supported by the National Science Foundation from 2006 – 2021.
+</div>
+</div>
+
 ## Case studies
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology<br />
@@ -54,5 +68,6 @@ interests span the theory and practice of algorithmic machine learning.
 - [Sergey Ivanov](https://nd7141.github.io/), Criteo AI Labs
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 - [Christopher Morris](https://chrsmrrs.github.io), Mila – Quebec AI Institute \& McGill University
+- [Chad Topaz](https://chadtopaz.com), Williams College
 
 More speakers to be listed soon!
