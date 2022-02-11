@@ -35,7 +35,8 @@ interests span the theory and practice of algorithmic machine learning.
 
 ## Case studies
 
-- [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
+- [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology<br />
+  *Distortion of Single-Cell Data in Two-Dimensional Embeddings*
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 - [Jessica Moore](https://www.linkedin.com/in/jessica-moore-b0298794/), Yale University
 
