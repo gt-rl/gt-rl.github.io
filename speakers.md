@@ -37,6 +37,7 @@ interests span the theory and practice of algorithmic machine learning.
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
+- [Jessica Moore](https://www.linkedin.com/in/jessica-moore-b0298794/), Yale University
 
 ## Panellists
 
