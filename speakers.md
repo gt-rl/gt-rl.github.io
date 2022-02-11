@@ -13,6 +13,13 @@ layout: default
 </div>
 </div>
 
+<div class='orgWrapper'>
+<img align="left" src="/assets/images/hh.jpg" alt="Heather Harrington" width="150">
+<div class='bioWrapper'>
+[**Heather A. Harrington**](https://www.maths.ox.ac.uk/people/heather.harrington) is an applied mathematician interested in dynamical systems, chemical reaction network theory, topological data analysis, and systems biology. She is professor of mathematics, and Royal Society University Research Fellow at the Mathematical Institute, University of Oxford, where she heads the Algebraic Systems Biology group.
+</div>
+</div>
+
 ## Invited talks
 
 <div class='orgWrapper'>
