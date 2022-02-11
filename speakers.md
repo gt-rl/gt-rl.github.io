@@ -67,6 +67,8 @@ has been supported by the National Science Foundation from 2006 – 2021.
 - [Corinna Coupette](https://people.mpi-inf.mpg.de/~coupette), Max Planck Institute for Informatics
 - [Sergey Ivanov](https://nd7141.github.io/), Criteo AI Labs
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
+- [Leland McInnes](https://ca.linkedin.com/in/leland-mcinnes-406233103),
+  Tutte Institute for Mathematics and Computing
 - [Christopher Morris](https://chrsmrrs.github.io), Mila – Quebec AI Institute \& McGill University
 - [Chad Topaz](https://chadtopaz.com), Williams College
 
