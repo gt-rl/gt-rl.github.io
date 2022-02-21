@@ -59,7 +59,8 @@ has been supported by the National Science Foundation from 2006 – 2021.
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology<br />
   *Distortion of Single-Cell Data in Two-Dimensional Embeddings*
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
-- [Jessica Moore](https://www.linkedin.com/in/jessica-moore-b0298794/), Yale University
+- [Jessica Moore](https://www.linkedin.com/in/jessica-moore-b0298794/), Yale University<br />
+  *G2 stem cells orchestrate time-directed, long-range coordination of calcium signaling during skin epidermal regeneration*
 
 ## Panellists
 
