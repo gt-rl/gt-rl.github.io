@@ -12,7 +12,7 @@ Representation Learning'.
 | **Date** |  Friday, 29 April 2022 |
 | **Location** | The workshop will be held *virtually*. |
 | **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2022/Workshop/GTRL) |
-| **Submission deadline** | Friday, 25 February 2022 (23:59 AoE) |
+| **Submission deadline** | ~~Friday, 25 February~~ Tuesday, 01 March 2022 (23:59 AoE) |
 | **Reviewing phase** (tentative) | Saturday, 26 February 2022 to Friday, 25 March 2022 |
 | **Notification** (tentative) | Saturday, 26 March 2022 |
 
