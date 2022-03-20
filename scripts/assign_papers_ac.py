@@ -1,21 +1,24 @@
 """Assign papers to area chairs."""
 
+import os
 import openreview
-import sys
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 if __name__ == '__main__':
 
     client = openreview.Client(
         baseurl='https://api.openreview.net',
-        username='bastian.rieck@bsse.ethz.ch',
-        password='',
+        username=os.getenv('OPENREVIEW_USER'),
+        password=os.getenv('OPENREVIEW_PASSWORD')
     )
 
     notes = list(
         openreview.tools.iterget_notes(
             client,
-            invitation='ICLR.cc/2021/Workshop/GTRL/-/Blind_Submission',
+            invitation='ICLR.cc/2022/Workshop/GTRL/-/Blind_Submission',
             details='original',
         )
     )
@@ -23,14 +26,14 @@ if __name__ == '__main__':
     numbers = [note.number for note in notes]
 
     emails = [
-        'mhajij@scu.edu',
+        'mustafahajij@gmail.com',
         'ashukl20@asu.edu',
-        'petri.giovanni@gmail.com'
+        'charu.sharma@iiit.ac.in',
     ]
 
     n_chairs = len(emails)
 
-    conference = openreview.helpers.get_conference(client, 'fKfYw_pGYYG')
+    conference = openreview.helpers.get_conference(client, '15tr0OcIj69')
 
     for index, number in enumerate(numbers):
         if index % n_chairs == 0:
@@ -38,6 +41,6 @@ if __name__ == '__main__':
 
             conference.set_assignment(
                 number=number,
-                user='~Mustafa_Hajij1',
+                user=emails[index],
                 is_area_chair=True,
             )
