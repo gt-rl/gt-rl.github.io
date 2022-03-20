@@ -36,11 +36,10 @@ if __name__ == '__main__':
     conference = openreview.helpers.get_conference(client, '15tr0OcIj69')
 
     for index, number in enumerate(numbers):
-        if index % n_chairs == 0:
-            print(number)
+        print(number, '-->', emails[index])
 
-            conference.set_assignment(
-                number=number,
-                user=emails[index],
-                is_area_chair=True,
-            )
+        conference.set_assignment(
+            number=number,
+            user=emails[index],
+            is_area_chair=True,
+        )
