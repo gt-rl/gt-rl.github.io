@@ -47,6 +47,9 @@ if __name__ == '__main__':
             try:
                 if '@' in member:
                     addresses.append(member)
+
+                    # Prevent duplicate profiles
+                    continue
                 else:
                     profile = client.search_profiles(ids=[member])[0]
             except OpenReviewException:
@@ -55,11 +58,13 @@ if __name__ == '__main__':
             reviewers.append(profile)
 
     for profile in reviewers:
+        name = get_full_name(profile)
+
         email = profile.content.get(
             'preferredEmail', profile.content['emails'][0]
         )
 
-        addresses.append(email)
+        addresses.append(f'{email},{name}')
 
     addressses = set(addresses)
 
