@@ -49,3 +49,22 @@ computational approaches (or communities) that work in this field, with
 emphasis on the domains of topological data analysis, graph
 representation learning, and manifold learning, on which we shall
 subsequently briefly comment.
+
+# Call for Papers: Topology, Algebra, and Geometry in the Data Sciences (Special Issue of La Matematica)
+
+This special issue will show-case work which takes concepts or tools
+from the rich fields of topology, algebra, and geometry and brings them
+to bear on data science problems. We expect the developed approaches to
+address a specific challenge and demonstrate utility on at least one
+interesting dataset. Submitted works should provide novel methodology
+and insight into interesting real-world datasets but are not required to
+be evaluated on conventional benchmarking datasets if these do not
+adequately capture the challenge which the paper seeks to address.
+Authors that have participated in the Geometrical and Topological
+Representation Learning Workshop at ICLR are encouraged to submit
+extended versions of their conference paper, provided there is
+significant novel extension of the work and the conference paper is
+appropriately cited and summarized.
+
+See https://www.springer.com/journal/44007/updates/19962244 for more
+information.
