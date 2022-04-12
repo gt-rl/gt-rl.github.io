@@ -56,6 +56,9 @@ has been supported by the National Science Foundation from 2006 – 2021.
 </div>
 </div>
 
+| **Topological Data Analysis of Collective Motion** |
+| Collective behaviors abound anywhere in nature that objects or agents interact. Investigators modeling collective behavior face a variety of challenges involving data from simulation and/or experiment. These challenges include exploring large, complex data sets to understand and characterize the system, inferring the model parameters that most accurately reflect a given data set, and assessing the goodness-of-fit between experimental data sets and proposed models. Topological data analysis provides a lens through which these challenges may be addressed. I will highlight how topological techniques, sometimes in concert with machine learning, can be applied to models arising from the study of groups displaying collective motion, such as bird flocks, fish schools, and insect swarms. The key approach is to characterize a system's dynamics via the time-evolution of topological invariants called Betti numbers, accounting for persistence of topological features across multiple scales. |
+
 ## Case studies
 
 - [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology<br />
