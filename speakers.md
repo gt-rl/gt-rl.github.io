@@ -14,11 +14,13 @@ layout: default
 </div>
 
 <div class='orgWrapper'>
-<img align="left" src="/assets/images/hh.jpg" alt="Heather Harrington" width="150">
+<img align="left" src="/assets/images/bs.jpg" alt="Bernadette Stolz" width="150">
 <div class='bioWrapper'>
-[**Heather A. Harrington**](https://www.maths.ox.ac.uk/people/heather.harrington) is an applied mathematician interested in dynamical systems, chemical reaction network theory, topological data analysis, and systems biology. She is professor of mathematics, and Royal Society University Research Fellow at the Mathematical Institute, University of Oxford, where she heads the Algebraic Systems Biology group.
+[**Bernadette Stolz**](https://www1.maths.ox.ac.uk/people/bernadette.stolz) is an applied mathematician interested in topological data analysis, data science, and mathematical biology. After finishing her Ph.D. at the University of Oxford, she joined the research group of Prof. Heather Harrington as a postdoctoral researcher.</div>
 </div>
-</div>
+
+| **Topological Data Analysis and Geometric Anomaly Detection** |
+| Topological data analysis (TDA) refers to the mathematical field that studies 'shape' of data. Research in this area has attracted a lot of interest over the last two decades with an increasing range of applications to real-world data. The most prominent method in TDA is persistent homology (PH), an algorithm that computes topological features such as connected components (dimension 0), loops (dimension 1), and voids (dimension 2) and how they change across different scales in the data. These multi-scale topological features are summarised in structures called barcodes, which can be equipped with a metric that is stable with respect to small perturbations to the data. However, this metric alone is not suitable for integration with machine learning, which has lead to the development of stable vectorisation methods such as persistence landscapes and persistence images. In this talk I will give an introduction to TDA and, in particular, PH as well as different vectorisation methods.  I will further demonstrate how we can apply local computations of PH to successfully identify non-manifold regions in two completely different data sets whose underlying spaces do not follow the manifold hypothesis and are known to admit singularities. |
 
 ## Invited talks
 
