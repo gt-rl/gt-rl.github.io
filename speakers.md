@@ -16,7 +16,8 @@ layout: default
 <div class='orgWrapper'>
 <img align="left" src="/assets/images/bs.jpg" alt="Bernadette Stolz" width="150">
 <div class='bioWrapper'>
-[**Bernadette Stolz**](https://www1.maths.ox.ac.uk/people/bernadette.stolz) is an applied mathematician interested in topological data analysis, data science, and mathematical biology. After finishing her Ph.D. at the University of Oxford, she joined the research group of Prof. Heather Harrington as a postdoctoral researcher.</div>
+[**Bernadette Stolz**](https://www1.maths.ox.ac.uk/people/bernadette.stolz) is an applied mathematician interested in topological data analysis, data science, and mathematical biology. After finishing her Ph.D. at the University of Oxford, she joined the research group of Prof. Heather Harrington as a postdoctoral researcher.
+</div>
 </div>
 
 | **Topological Data Analysis and Geometric Anomaly Detection** |
