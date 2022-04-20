@@ -16,7 +16,7 @@ layout: default
 <div class='orgWrapper'>
 <img align="left" src="/assets/images/bs.jpg" alt="Bernadette Stolz" width="150">
 <div class='bioWrapper'>
-[**Bernadette Stolz**](https://www1.maths.ox.ac.uk/people/bernadette.stolz) is an applied mathematician interested in topological data analysis, data science, and mathematical biology. After finishing her Ph.D. at the University of Oxford, she joined the research group of Prof. Heather Harrington as a postdoctoral researcher.
+[**Bernadette Stolz**](https://www1.maths.ox.ac.uk/people/bernadette.stolz) is a researcher in the Centre for Topological Data Analysis at the Mathematical Institute at the University of Oxford. She is interested in applying ideas from topology to study the shape of biological data and gain novel insights into complex biological processes. Before pursuing her DPhil, Bernadette obtained an MSc in Mathematical Modelling and Scientific Computing from the University of Oxford in 2014, as well as two undergraduate degrees from the University of Bern (BSc in Mathematics, 2012) and the University of Göttingen (BSc in Molecular Medicine, 2009). As part of her degrees she also spent time studying at Charles University in Prague (2011) and conducted two short research projects at the University of Cambridge (2008 and 2009).
 </div>
 </div>
 
