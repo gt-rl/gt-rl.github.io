@@ -13,6 +13,10 @@ layout: default
 </div>
 </div>
 
+<div style="text-align:center">
+&#10086;
+</div>
+
 <div class='orgWrapper'>
 <img align="left" src="/assets/images/bs.jpg" alt="Bernadette Stolz" width="150">
 <div class='bioWrapper'>
@@ -41,6 +45,15 @@ German Pattern Recognition Award and a Best Paper Award at the
 International Conference for Machine Learning (ICML). Her research
 interests span the theory and practice of algorithmic machine learning.
 </div>
+</div>
+
+| **Sign and Basis Invariant Networks for Spectral Graph Representation Learning** |
+| Many machine learning tasks involve processing eigenvectors derived from data. Especially valuable are Laplacian eigenvectors, which capture useful structural information about graphs and other geometric objects. However, ambiguities arise when computing eigenvectors: for each eigenvector v, the sign flipped version -v is also an eigenvector. More generally, higher dimensional eigenspaces contain infinitely many choices of basis eigenvectors. These ambiguities make it a challenge to process eigenvectors and eigenspaces in a consistent way. In response, we study new neural architectures that are invariant to all requisite symmetries and hence process collections of eigenspaces in a principled manner. Our networks are universal, i.e., they can approximate any continuous function of eigenvectors with the proper invariances. They are also theoretically strong for graph representation learning -- they can approximate any spectral graph convolution, can compute spectral invariants that go beyond message passing neural networks, and can provably simulate previously proposed graph positional encodings. Experiments show the strength of our networks on a variety of tasks. 
+
+This talk is based on joint work with Derek Lim, Joshua Robinson, Lingxiao Zhao, Tess Smidt, Suvrit Sra and Haggai Maron. |
+
+<div style="text-align:center">
+&#10086;
 </div>
 
 <div class='orgWrapper'>
