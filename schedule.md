@@ -41,3 +41,10 @@ presentations, please login to the [ICLR virtual website for this workshop](http
 - [Claire Donnat, University of Chicago](https://donnate.github.io)
 - [Dmitry Kobak, Tübingen University](https://dkobak.github.io)
 - [Leland McInnes,  Tutte Institute for Mathematics and Computing](https://ca.linkedin.com/in/leland-mcinnes-406233103),
+
+# Panel B: Long-Range Graph Representation Learning
+
+- [Corinna Coupette, Max Planck Institute for Informatics](https://people.mpi-inf.mpg.de/~coupette)
+- [Stefanie Jegelka, MIT](https://people.csail.mit.edu/stefje/)
+- [Christopher Morris, Mila – Quebec AI Institute \& McGill University](https://chrsmrrs.github.io)
+
