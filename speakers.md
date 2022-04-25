@@ -59,6 +59,27 @@ This talk is based on joint work with Derek Lim, Joshua Robinson, Lingxiao Zhao,
 </div>
 
 <div class='orgWrapper'>
+<img align="left" src="/assets/images/rk.png" alt="Roland Kwitt" width="150">
+<div class='bioWrapper'>
+[**Roland Kwitt**](https://rkwitt.github.io) is a full professor for
+machine learning in the Department of Artificial Intelligence and Human
+Interfaces (AIHI) at the University of Salzburg (PLUS), Austria. Prior
+to that, he was part of the medical imaging and computer vision group at
+Kitware Inc., North Carolina, USA. Roland's research spans multiple areas, but
+mostly focusses on theoretical and practical aspects of learning methods
+that allow to leverage and control structural characteristics of data.
+He is also a member of the ELLIS society.
+</div>
+</div>
+
+| **Topologically Densified Distributions** |
+| In this talk, I am going to discuss some recent advances in the context of (topological) regularization for small sample-size learning with overparametrized neural networks. Specifically, I will shift focus from architectural properties, such as norms on the network weights, to properties of the internal representations before a linear classifier. In particular, I will advocate a topological constraint on samples drawn from the probability measure induced in that space. This provably leads to mass concentration effects around the representations of training instances, i.e., a property beneficial for generalization. Importantly, the topological constraints can be imposed in an efficient manner by leveraging results from prior work. A series of experiments on popular (vision) benchmarks provides strong empirical evidence to support the claim for better generalization in the small sample-size regime. |
+
+<div style="text-align:center">
+&#10086;
+</div>
+
+<div class='orgWrapper'>
 <img align="left" src="/assets/images/ct.png" alt="Chad Topaz" width="150">
 <div class='bioWrapper'>
 [**Chad Topaz**](https://chadtopaz.com) (A.B. Harvard, Ph.D. Northwestern)
