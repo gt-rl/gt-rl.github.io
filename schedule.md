@@ -48,3 +48,14 @@ presentations, please login to the [ICLR virtual website for this workshop](http
 - [Stefanie Jegelka, MIT](https://people.csail.mit.edu/stefje/)
 - [Christopher Morris, Mila – Quebec AI Institute \& McGill University](https://chrsmrrs.github.io)
 
+# Panel C: Topology-Driven Machine Learning
+
+- [Celia Hacker, EPFL](https://www.epfl.ch/labs/hessbellwald-lab/members/celia-hacker/)
+- [Bernadette Stolz, University of Oxford](https://www1.maths.ox.ac.uk/people/bernadette.stolz) 
+- [Chad Topaz, Williams College](https://chadtopaz.com)
+
+# Panel D: Bridging Theory and Practice
+
+- [Bryan Bischof, Weights and Biases, Inc.](http://bbischof.com)
+- [Meire Fortunato, DeepMind](https://math.berkeley.edu/~meiref)
+- [Sergey Ivanov, Criteo AI](https://nd7141.github.io)
