@@ -21,7 +21,7 @@ presentations, please login to the [ICLR virtual website for this workshop](http
 | 11:40 AM - 11:45 AM | Spotlight                     | Neural Approximation of Extended Persistent Homology on Graphs                                            |
 | 11:45 AM - 11:50 AM | Spotlight                     | RipsNet: a general architecture for fast and robust estimation of the persistent homology of point clouds |
 | 11:50 AM - 11:55 AM | Spotlight                     | Pre-training Molecular Graph Representation with 3D Geometry                                              |
-| 11:55 AM - 12:00 PM | Spotlight                     | Group Symmetry in PAC Learning Elesedy                                                                    |
+| 11:55 AM - 12:00 PM | Spotlight                     | Group Symmetry in PAC Learning                                                                            |
 | 12:00 PM - 01:00 PM | Poster session on Gather.Town | Poster Session I                                                                                          |
 | 01:40 PM - 01:50 PM | Case Study                    | Tara Chari                                                                                                |
 | 01:50 PM - 02:30 PM | Panel Discussion (live)       | Panel A: Data-Driven Manifold Learning                                                                    |
