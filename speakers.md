@@ -103,16 +103,3 @@ has been supported by the National Science Foundation from 2006 – 2021.
 - [Dmitry Kobak](https://dkobak.github.io), Tübingen University
 - [Jessica Moore](https://www.linkedin.com/in/jessica-moore-b0298794/), Yale University<br />
   *G2 stem cells orchestrate time-directed, long-range coordination of calcium signaling during skin epidermal regeneration*
-
-## Panellists
-
-- [Tara Chari](https://scholar.google.com/citations?user=ivMagPQAAAAJ&hl=en), California Institute of Technology
-- [Corinna Coupette](https://people.mpi-inf.mpg.de/~coupette), Max Planck Institute for Informatics
-- [Sergey Ivanov](https://nd7141.github.io/), Criteo AI Labs
-- [Dmitry Kobak](https://dkobak.github.io), Tübingen University
-- [Leland McInnes](https://ca.linkedin.com/in/leland-mcinnes-406233103),
-  Tutte Institute for Mathematics and Computing
-- [Christopher Morris](https://chrsmrrs.github.io), Mila – Quebec AI Institute \& McGill University
-- [Chad Topaz](https://chadtopaz.com), Williams College
-
-More speakers to be listed soon!
