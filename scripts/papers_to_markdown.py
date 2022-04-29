@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     all_decision_notes = list(openreview.tools.iterget_notes(
         client,
-        invitation='ICLR.cc/2021/Workshop/GTRL/Paper.*/-/Decision',
+        invitation='ICLR.cc/2022/Workshop/GTRL/Paper.*/-/Decision',
     ))
 
     # IDs of accepted papers and IDs of spotlights. Will be used later
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     blind_notes = {
         note.forum: note for note in openreview.tools.iterget_notes(
             client,
-            invitation='ICLR.cc/2021/Workshop/GTRL/-/Blind_Submission',
+            invitation='ICLR.cc/2022/Workshop/GTRL/-/Blind_Submission',
             details='original',
         )
     }

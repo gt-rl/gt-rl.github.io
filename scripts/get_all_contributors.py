@@ -43,14 +43,14 @@ if __name__ == '__main__':
     )
 
     notes = client.get_notes(
-        content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
+        content={'venueid': 'ICLR.cc/2022/Workshop/GTRL'}
     )
 
     all_profiles = []
     contributors = set()
 
     for member in client.get_group(
-            id='ICLR.cc/2021/Workshop/GTRL/Area_Chairs').members:
+            id='ICLR.cc/2022/Workshop/GTRL/Area_Chairs').members:
         all_profiles.append(client.get_profile(member))
 
     for note in notes:
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     for review in openreview.tools.iterget_notes(
         client,
-        invitation='ICLR.cc/2021/Workshop/GTRL/Paper.*/-/Official_Review'
+        invitation='ICLR.cc/2022/Workshop/GTRL/Paper.*/-/Official_Review'
     ):
         assert len(review.signatures) == 1
 
