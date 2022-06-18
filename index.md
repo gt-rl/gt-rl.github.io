@@ -9,21 +9,13 @@ Representation Learning'.
 
 ## Information for participants
 
-| **Date** |  Friday, 29 April 2022 |
-| **Location** | The workshop will be held *virtually*. |
-| **Submission link** | [OpenReview](https://openreview.net/group?id=ICLR.cc/2022/Workshop/GTRL) |
-| **Submission deadline** | ~~Friday, 25 February~~ Tuesday, 01 March 2022 (23:59 AoE) |
-| **Reviewing phase** (tentative) | Saturday, 26 February 2022 to Friday, 25 March 2022 |
-| **Notification** (tentative) | Saturday, 26 March 2022 |
+The workshop and the associated [Geomstats](https://geomstats.github.io/) challenge are over---a big
+thank you to everyone who participated!
 
-<!--
+- Read  the [white paper](/assets/ICLR_2022_GTRL_Geomstats_Challenge.pdf) of the
+  challenge! 
 
-You can find our *Gather.Town* instance [here](https://eventhosts.gather.town/app/521DLws31zFHszdo/GTRL%20@%20ICLR%202021).
-Please note that you need to be logged in with your ICLR account to access the site.
-
--->
-
-Consider joining our Slack Community [Geometry and Topology in ML](https://tda-in-ml.slack.com/join/shared_invite/enQtOTIyMTIyNTYxMTM2LTA2YmQyZjVjNjgxZWYzMDUyODY5MjlhMGE3ZTI1MzE4NjI2OTY0MmUyMmQ3NGE0MTNmMzNiMTViMjM2MzE4OTc#/) to stay up-to-date with upcoming events, ask questions, and be part of a vibrant, diverse scientific community. 
+- Consider joining our Slack Community [Geometry and Topology in ML](https://tda-in-ml.slack.com/join/shared_invite/enQtOTIyMTIyNTYxMTM2LTA2YmQyZjVjNjgxZWYzMDUyODY5MjlhMGE3ZTI1MzE4NjI2OTY0MmUyMmQ3NGE0MTNmMzNiMTViMjM2MzE4OTc#/) to stay up-to-date with upcoming events, ask questions, and be part of a vibrant, diverse scientific community. 
 
 # Background
 
