@@ -1,6 +1,7 @@
 """Download titles of accepted papers."""
 
 from dotenv import load_dotenv
+from wordcloud import WordCloud, STOPWORDS
 
 import openreview
 import os
@@ -20,6 +21,8 @@ if __name__ == "__main__":
         details="directReplies",
     )
 
+    text = ""
+
     for submission in submissions:
         title = submission.content["title"]
         abstract = submission.content["abstract"]
@@ -29,3 +32,19 @@ if __name__ == "__main__":
 
         if len(words) < 10:
             print(f"{title}: {len(words)} word(s) ({url})")
+    
+        text += title #+ " " + abstract
+
+    stopwords = set(STOPWORDS)
+
+    wc = WordCloud(
+        width=1200,
+        height=600,
+        max_words=500,
+        background_color='white',
+        color_func=lambda *args, **kwargs: 'black',
+        stopwords=stopwords,
+    )
+
+    wc.generate(text)
+    wc.to_file("word_cloud.png")
