@@ -47,7 +47,12 @@ if __name__ == "__main__":
         abstract1 = nlp(abstract1)
         abstract2 = nlp(abstract2)
 
-        similarities.append(abstract1.similarity(abstract2))
+        similarity = abstract1.similarity(abstract2)
+
+        if similarity >= 0.99:
+            print(title1, "<->", title2)
+
+        similarities.append(similarity)
 
     sns.histplot(data=similarities)
     plt.show()

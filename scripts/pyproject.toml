@@ -15,6 +15,8 @@ matplotlib = "^3.4.1"
 wordcloud = "^1.8.1"
 "pdfminer.six" = "^20201018"
 python-dotenv = "^0.17.1"
+spacy = "^3.4.1"
+seaborn = "^0.12.0"
 
 [tool.poetry.dev-dependencies]
 
