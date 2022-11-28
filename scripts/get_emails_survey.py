@@ -40,3 +40,6 @@ if __name__ == "__main__":
         e_mails.update([profile.get_preferred_email()])
 
     print(f"Got {len(e_mails)} e-mail addresses", file=sys.stderr)
+
+    for addr in sorted(e_mails):
+        print(addr)
