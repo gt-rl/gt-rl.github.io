@@ -1,4 +1,4 @@
-"""Get reviewer information for workshop papers."""
+"""Get reviewer information for papers."""
 
 import locale
 import openreview
