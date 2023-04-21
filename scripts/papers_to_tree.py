@@ -38,16 +38,25 @@ if __name__ == "__main__":
         root = None
 
         all_notes = client.get_all_notes(forum=forum)
+
+        # Nodes of the graph are all the IDs of non-deleted
+        # relevant notes itself. We need this to handle the
+        # deleted notes later on.
+        nodes = set([note.id for note in all_notes])
+
         for note in all_notes:
             target = note.id
             source = note.replyto
             invite = note.invitation.split("/")[-1]
 
-            nodes.add(target)
-
             if source is not None:
+
+                # If we don't know the source of an edge, we put it to
+                # the main forum. This handles deleted notes.
+                if source not in nodes:
+                    source = forum
+
                 edges.append((source, target, {"type": invite}))
-                nodes.add(source)
             else:
                 root = target
 
