@@ -24,14 +24,14 @@ if __name__ == "__main__":
 
     # Will contain output data. Keys denote forum IDs (i.e. papers),
     # values denote the respective tree.
-    data = {}
+    output_data = {}
 
     for submission in submissions:
         title = submission.content["title"]
         abstract = submission.content["abstract"]
         forum = submission.forum
 
-        G = nx.DiGraph(title=title, abstract=abstract, forum=forum)
+        G = nx.Graph(title=title, abstract=abstract, forum=forum)
 
         nodes = set()
         edges = []
@@ -44,10 +44,48 @@ if __name__ == "__main__":
         # deleted notes later on.
         nodes = set([note.id for note in all_notes])
 
+        # Will contain all node attributes as a nested dictionary, with
+        # keys representing nodes.
+        node_attributes = {}
+
+        for note in all_notes:
+            data = {}
+
+            if "comment" in note.content:
+                data["text"] = note.content["comment"]
+                data["type"] = "comment"
+            elif "review" in note.content or "Meta Review" in note.content:
+                if "Meta Review" in note.content:
+                    data["text"] = note.content["Meta Review"]
+                    data["recommendation"] = note.content["Recommendation"]
+                    data["type"] = "meta-review"
+                else:
+                    data["text"] = note.content["review"]
+                    data["type"] = "review"
+                    data["score"] = int(note.content["Overall Score"][0])
+
+                if "Confidence" in note.content:
+                    data["confidence"] = int(note.content["Confidence"][0])
+                elif "confidence" in note.content:
+                    data["confidence"] = int(note.content["confidence"][0])
+
+            elif "decision" in note.content:
+                data["decision"] = note.content["decision"]
+
+                # Propagate decision to graph-level object just to
+                # simplify processing later on.
+                G.graph["decision"] = data["decision"]
+
+            # Always take the last signature in case of multiple
+            # signatures. OpenReview does not permit multiple of
+            # these fields anyway.
+            data["signature"] = note.signatures[-1]
+
+            node_attributes[note.id] = data
+
         for note in all_notes:
             target = note.id
             source = note.replyto
-            invite = note.invitation.split("/")[-1]
 
             if source is not None:
 
@@ -56,13 +94,12 @@ if __name__ == "__main__":
                 if source not in nodes:
                     source = forum
 
-                edges.append((source, target, {"type": invite}))
-            else:
-                root = target
+                edges.append((source, target))
 
         G.add_nodes_from(nodes)
+        nx.set_node_attributes(G, node_attributes)
         G.add_edges_from(edges)
 
-        data[forum] = nx.readwrite.json_graph.tree_data(G, root)
+        output_data[forum] = nx.readwrite.json_graph.node_link_data(G)
 
-    print(json.dumps(data, indent=4))
+    print(json.dumps(output_data, indent=4))
