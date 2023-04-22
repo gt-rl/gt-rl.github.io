@@ -44,6 +44,10 @@ if __name__ == "__main__":
         # deleted notes later on.
         nodes = set([note.id for note in all_notes])
 
+        # We also ignore certain nodes when walking the three, for
+        # instance the ones arising from review ratings.
+        ignored_nodes = set()
+
         # Will contain all node attributes as a nested dictionary, with
         # keys representing nodes.
         node_attributes = {}
@@ -54,6 +58,8 @@ if __name__ == "__main__":
             # Skip notes that are just ratings of reviews. They are
             # irrelevant to the type of analysis we want to perform.
             if "rating" in note.content:
+                nodes.remove(note.id)
+                ignored_nodes.add(note.id)
                 continue
 
             if "comment" in note.content:
@@ -91,6 +97,11 @@ if __name__ == "__main__":
         for note in all_notes:
             target = note.id
             source = note.replyto
+
+            # Don't add an edge to a node that we ignored anyway. This
+            # can happen for review ratings, for instance.
+            if target in ignored_nodes:
+                continue
 
             if source is not None:
 
