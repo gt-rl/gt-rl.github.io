@@ -48,10 +48,14 @@ if __name__ == "__main__":
         # keys representing nodes.
         node_attributes = {}
 
-
         for note in all_notes:
             data = {}
-        
+
+            # Skip notes that are just ratings of reviews. They are
+            # irrelevant to the type of analysis we want to perform.
+            if "rating" in note.content:
+                continue
+
             if "comment" in note.content:
                 data["text"] = note.content["comment"]
                 data["type"] = "comment"
