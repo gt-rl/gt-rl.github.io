@@ -31,7 +31,7 @@ if __name__ == "__main__":
         abstract = submission.content["abstract"]
         forum = submission.forum
 
-        G = nx.Graph(title=title, abstract=abstract, forum=forum)
+        G = nx.DiGraph(title=title, abstract=abstract, forum=forum)
 
         nodes = set()
         edges = []
@@ -48,9 +48,10 @@ if __name__ == "__main__":
         # keys representing nodes.
         node_attributes = {}
 
+
         for note in all_notes:
             data = {}
-
+        
             if "comment" in note.content:
                 data["text"] = note.content["comment"]
                 data["type"] = "comment"
@@ -69,7 +70,7 @@ if __name__ == "__main__":
                 elif "confidence" in note.content:
                     data["confidence"] = int(note.content["confidence"][0])
 
-            elif "decision" in note.content:
+            if "decision" in note.content:
                 data["decision"] = note.content["decision"]
 
                 # Propagate decision to graph-level object just to
