@@ -11,35 +11,56 @@ from openreview.openreview import OpenReviewException
 load_dotenv()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     client = openreview.Client(
-        baseurl='https://api.openreview.net',
-        username=os.getenv('OPENREVIEW_USER'),
-        password=os.getenv('OPENREVIEW_PASSWORD')
+        baseurl="https://api.openreview.net",
+        username=os.getenv("OPENREVIEW_USER"),
+        password=os.getenv("OPENREVIEW_PASSWORD"),
     )
 
-    accepted_papers = client.get_notes(
-        content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
+    notes = client.get_all_notes(
+        invitation="SampTA/2023/Conference/-/Blind_Submission",
+        details="directReplies",
     )
 
-    notes = client.get_notes(
-        content={'venueid': 'ICLR.cc/2021/Workshop/GTRL'}
-    )
+    print("Received", len(notes), "notes")
 
-    print('Received', len(notes), 'notes')
+    n_rejected = 0
+
+    rejected_papers = []
 
     for note in notes:
-        author_ids = note.content['authorids']
+        rejected = False
 
-        print(note.content['title'])
+        for reply in note.details["directReplies"]:
+            if reply["invitation"].endswith("Decision"):
+                if reply["content"]["decision"] == "Reject":
+                    rejected = True
+                    n_rejected += 1
+                    break
+
+        if rejected:
+            rejected_papers.append(note.original)
+
+    notes = client.get_all_notes(
+        invitation="SampTA/2023/Conference/-/Submission",
+    )
+
+    for note in notes:
+        if note.forum not in rejected_papers:
+            continue
+
+        author_ids = note.content["authorids"]
+        print(note.content["title"])
 
         for author_id in author_ids:
-            if '@' in author_id:
-                print(' ', author_id)
-            else:
+            if "@" in author_id:
+                print(" ", author_id)
+            elif author_id.startswith("~"):
+                print(author_id)
                 profile = client.search_profiles(ids=[author_id])[0]
                 email = profile.content.get(
-                    'preferredEmail', profile.content['emails'][0]
+                    "preferredEmail", profile.content["emails"][0]
                 )
-                print(' ', email)
+                print(" ", email)
