@@ -19,6 +19,8 @@ seaborn = "^0.12.0"
 openreview-py = "^1.23.1"
 urllib3 = "^1.26.15"
 networkx = "^3.1"
+black = "^23.3.0"
+titlecase = "^2.4"
 
 [tool.poetry.dev-dependencies]
 
