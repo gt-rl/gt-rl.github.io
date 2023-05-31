@@ -4,7 +4,9 @@ import pandas as pd
 
 import openreview
 import os
+import random
 import sys
+import titlecase
 
 
 load_dotenv()
@@ -33,10 +35,13 @@ if __name__ == "__main__":
     df = df.sort_values(by="average rating", ascending=False)
 
     emails = []
+    titles = []
 
     for index, row in df.head(n=top_k).iterrows():
         ids = row["authorids"]
         ids = parse_author_ids(ids)
+
+        titles.append(titlecase.titlecase(row["title"]))
 
         for author_id in ids:
             if "@" in author_id:
@@ -51,3 +56,7 @@ if __name__ == "__main__":
     emails = set(emails)
     for email in emails:
         print(email)
+
+    random.shuffle(titles)
+    for title in titles:
+        print(title)
