@@ -54,7 +54,7 @@ if __name__ == "__main__":
                 emails.append(email)
 
     emails = set(emails)
-    for email in emails:
+    for email in sorted(emails):
         print(email)
 
     random.shuffle(titles)
