@@ -1,7 +1,26 @@
+from dotenv import load_dotenv
+
 import pandas as pd
+
+import openreview
+import os
 import sys
 
+
+load_dotenv()
+
+
+def parse_author_ids(ids):
+    return ids.split("|")
+
+
 if __name__ == "__main__":
+    client = openreview.api.OpenReviewClient(
+        baseurl="https://api.openreview.net",
+        username=os.getenv("OPENREVIEW_USER"),
+        password=os.getenv("OPENREVIEW_PASSWORD"),
+    )
+
     filename = sys.argv[1]
 
     top_k = 20
@@ -13,5 +32,22 @@ if __name__ == "__main__":
     df = df[df.decision == decision]
     df = df.sort_values(by="average rating", ascending=False)
 
+    emails = []
+
     for index, row in df.head(n=top_k).iterrows():
-        print(row["authorids"])
+        ids = row["authorids"]
+        ids = parse_author_ids(ids)
+
+        for author_id in ids:
+            if "@" in author_id:
+                emails.append(author_id)
+            elif author_id.startswith("~"):
+                profile = client.search_profiles(ids=[author_id])[0]
+                email = profile.content.get(
+                    "preferredEmail", profile.content["emails"][0]
+                )
+                emails.append(email)
+
+    emails = set(emails)
+    for email in emails:
+        print(email)
