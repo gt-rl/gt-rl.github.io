@@ -1,6 +1,5 @@
 """Get all camera-ready PDFs."""
 
-import io
 import openreview
 import os
 import requests
@@ -10,16 +9,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def download(url, number, prefix):
+def download(prefix, client, note_id, number, data_type, ext):
     """Download data and store it, associated to a paper."""
-    data = requests.get(pdf_url)
-    content_type = data.headers.get("content-type")
+    data = client.get_attachment(note_id, data_type)
 
-    print(content_type)
+    print(ext)
 
-    if content_type == "application/pdf":
-        with open(f"/tmp/{prefix}{number:02d}.pdf", "wb") as f:
-            f.write(data.content)
+    with open(f"/tmp/{prefix}{number:02d}{ext}", "wb") as f:
+        f.write(data)
 
 
 if __name__ == "__main__":
@@ -50,13 +47,16 @@ if __name__ == "__main__":
 
         if decision == "Accept (Paper)":
             number = note.number
-            pdf = note.content["pdf"]
-            supp = note.content.get("supplementary_materials", None)
+            download("Main_", client, note.id, number, "pdf", ".pdf")
 
-            pdf_url = f"https://openreview.net{pdf}"
-            supp_url = f"https://openreview.net{supp}"
-
-            download(pdf_url, number, "Main_")
-
-            if supp is not None:
-                download(supp_url, number, "Supp_")
+            # It is not enough to check for "is None" here, since some
+            # materials are stored with an empty string.
+            if supp := note.content.get("supplementary_materials"):
+                download(
+                    "Supp_",
+                    client,
+                    note.id,
+                    number,
+                    "supplementary_materials",
+                    os.path.splitext(supp)[1],
+                )
