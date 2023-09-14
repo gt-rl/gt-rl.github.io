@@ -47,13 +47,13 @@ if __name__ == "__main__":
 
         if decision == "Accept (Paper)":
             number = note.number
-            download("Main_", client, note.id, number, "pdf", ".pdf")
+            download("SampTA_Main_", client, note.id, number, "pdf", ".pdf")
 
             # It is not enough to check for "is None" here, since some
             # materials are stored with an empty string.
             if supp := note.content.get("supplementary_materials"):
                 download(
-                    "Supp_",
+                    "SampTA_Supp_",
                     client,
                     note.id,
                     number,
