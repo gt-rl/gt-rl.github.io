@@ -25,6 +25,9 @@ def handle_venue(client, venue):
         details="directReplies",
     )
 
+    print(venue)
+    print("--", len(all_submissions), "submissions in total")
+
     # Let's try v2 of the API if we do not get any results. We just need
     # to deviate here briefly to fill up the `accepted_submissions` list
     # correctly.
@@ -36,12 +39,9 @@ def handle_venue(client, venue):
         )
 
         accepted_submissions = client.get_all_notes(
-                content={"venueid": venue}, limit=2
+                content={"venueid": venue}
         )
     else:
-        print(venue)
-        print("--", len(all_submissions), "submissions in total")
-
         id_to_submission = {note.id: note for note in all_submissions}
 
         all_decision_notes = []
