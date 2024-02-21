@@ -25,75 +25,102 @@ def handle_venue(client, venue):
         details="directReplies",
     )
 
-    print(venue)
-    print("--", len(all_submissions), "submissions in total")
-
-    id_to_submission = {note.id: note for note in all_submissions}
-
-    all_decision_notes = []
-    accepted_submissions = []
-
-    # ICLR 2019 used meta reviews; the recommendation is akin to the
-    # decision here. What a nightmare.
-    if venue == "ICLR.cc/2019/Conference":
-        suffix = "Meta_Review"
-        decision = "recommendation"
-    else:
-        suffix = "Decision"
-        decision = "decision"
-
-    for note in all_submissions:
-        all_decision_notes.extend(
-            [
-                reply
-                for reply in note.details["directReplies"]
-                if reply["invitation"].endswith(suffix)
-                # This is necessary because at least one conference,
-                # viz., ICLR 2017, encodes decisions in a field that
-                # is named "acceptance" instead of "decision".
-                or reply["invitation"].endswith("acceptance")
-            ]
+    # Let's try v2 of the API if we do not get any results. We just need
+    # to deviate here briefly to fill up the `accepted_submissions` list
+    # correctly.
+    if len(all_submissions) == 0:
+        client = openreview.Client(
+            baseurl="https://api2.openreview.net",
+            username=username,
+            password=password,
         )
 
-        # Special handling for conferences that do not have special
-        # decision notes
-        if "decision" in note.content:
-            decision = note.content["decision"]
+        accepted_submissions = client.get_all_notes(
+                content={"venueid": venue}, limit=2
+        )
+    else:
+        print(venue)
+        print("--", len(all_submissions), "submissions in total")
 
-            # The decision notes are of the following form:
-            #
-            # conferencePoster-iclr2013-workshop: workshop submission
-            #
-            # conferenceOral-iclr2013-conference: ditto
-            # conferencePoster-iclr2013-conference: conference submission
-            #
-            # Since we are not interested in making a distinction
-            # between orals and posters, we just accept as-is.
-            if decision.endswith("conference"):
-                accepted_submissions.append(note)
+        id_to_submission = {note.id: note for note in all_submissions}
 
-    print("--", len(all_decision_notes), "decision notes")
+        all_decision_notes = []
+        accepted_submissions = []
 
-    # We use `extend` here because some conferences use direct
-    # decisions in the contents of a note, which we can use in
-    # order to *directly* accept a submission.
-    accepted_submissions.extend(
-        [
-            id_to_submission[note["forum"]]
-            for note in all_decision_notes
-            if "Accept" in note["content"][decision]
-        ]
-    )
+        # ICLR 2019 used meta reviews; the recommendation is akin to the
+        # decision here. What a nightmare.
+        if venue == "ICLR.cc/2019/Conference":
+            suffix = "Meta_Review"
+            decision = "recommendation"
+        else:
+            suffix = "Decision"
+            decision = "decision"
+
+        for note in all_submissions:
+            all_decision_notes.extend(
+                [
+                    reply
+                    for reply in note.details["directReplies"]
+                    if reply["invitation"].endswith(suffix)
+                    # This is necessary because at least one conference,
+                    # viz., ICLR 2017, encodes decisions in a field that
+                    # is named "acceptance" instead of "decision".
+                    or reply["invitation"].endswith("acceptance")
+                ]
+            )
+
+            # Special handling for conferences that do not have special
+            # decision notes
+            if "decision" in note.content:
+                decision = note.content["decision"]
+
+                # The decision notes are of the following form:
+                #
+                # conferencePoster-iclr2013-workshop: workshop submission
+                #
+                # conferenceOral-iclr2013-conference: ditto
+                # conferencePoster-iclr2013-conference: conference submission
+                #
+                # Since we are not interested in making a distinction
+                # between orals and posters, we just accept as-is.
+                if decision.endswith("conference"):
+                    accepted_submissions.append(note)
+
+        print("--", len(all_decision_notes), "decision notes")
+
+        # We use `extend` here because some conferences use direct
+        # decisions in the contents of a note, which we can use in
+        # order to *directly* accept a submission.
+        accepted_submissions.extend(
+            [
+                id_to_submission[note["forum"]]
+                for note in all_decision_notes
+                if "Accept" in note["content"][decision]
+            ]
+        )
 
     print("--", len(accepted_submissions), "accepted submissions")
 
     rows = []
 
     for submission in accepted_submissions:
-        authors = submission.content["authors"]
+
+        # There are some submissions that do not have an author. Yikes.
+        if "authors" not in submission.content:
+            continue
+
         key = submission.id
-        title = submission.content["title"]
-        abstract = submission.content["abstract"]
+
+        # Check whether we have to use v2 version.
+        if isinstance(submission.content["authors"], dict):
+            authors = submission.content["authors"]["value"]
+            title = submission.content["title"]["value"]
+            abstract = submission.content["abstract"]["value"]
+        else:
+            authors = submission.content["authors"]
+            key = submission.id
+            title = submission.content["title"]
+            abstract = submission.content["abstract"]
 
         # Sanitize the title. This is not done automatically, and older
         # venues of ICLR contain some junk characters.
