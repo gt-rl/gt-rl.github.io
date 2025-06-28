@@ -1,4 +1,5 @@
 import os
+import requests
 
 from dotenv import load_dotenv
 from openreview.api import OpenReviewClient
@@ -35,8 +36,22 @@ for note in notes:
     )
     if camera_ready_invitation in note.invitations:
         camera_ready_notes.append(note)
-
-for note in camera_ready_notes:
-    print(note)
+    else:
+        print("Missing:", note.number)
 
 print(len(camera_ready_notes), "camera-ready notes")
+
+for note in camera_ready_notes:
+    rel_url = note.content["pdf"]["value"]
+    url = f"https://openreview.net{rel_url}"
+
+    filename = f"/tmp/{note.number:02d}.pdf"
+
+    response = requests.get(url, cookies=client.session.cookies)
+    if response.status_code == 200:
+        filename = f"{note.number}.pdf"
+        with open(filename, "wb") as f:
+            f.write(response.content)
+        print(f"Saved: {filename}")
+    else:
+        print(f"Failed: {url} ({response.status_code})")
