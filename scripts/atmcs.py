@@ -3,6 +3,7 @@ import requests
 
 from dotenv import load_dotenv
 from openreview.api import OpenReviewClient
+from openreview.tools import get_profiles
 
 load_dotenv()
 
@@ -22,6 +23,18 @@ note = client.get_note(id="BV4pBJywx2")
 
 venue_id = "appliedtopology.org/ATMCS/2025/Conference"
 venue_group = client.get_group(venue_id)
+
+client.impersonate(venue_id)
+
+profiles = get_profiles(
+    client, ["~António_Leitão2", "~Buddha_Nath_Sharma1", "~Dylan_Peek1"]
+)
+
+for profile in profiles:
+    user_email = profile.get_preferred_email()
+    print(user_email)
+
+raise "heck"
 
 # notes = client.get_all_notes(invitation=f"{venue_id}/-/Submission")
 notes = client.get_all_notes(content={"venueid": venue_id})
@@ -45,11 +58,9 @@ for note in camera_ready_notes:
     rel_url = note.content["pdf"]["value"]
     url = f"https://openreview.net{rel_url}"
 
-    filename = f"/tmp/{note.number:02d}.pdf"
-
     response = requests.get(url, cookies=client.session.cookies)
     if response.status_code == 200:
-        filename = f"{note.number}.pdf"
+        filename = f"/tmp/{note.number:02d}.pdf"
         with open(filename, "wb") as f:
             f.write(response.content)
         print(f"Saved: {filename}")
