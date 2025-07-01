@@ -16,8 +16,6 @@ client = OpenReviewClient(
 invs = client.get_invitations(
     prefix="appliedtopology.org/ATMCS/2025/Conference"
 )
-for inv in invs:
-    print(inv.id)
 
 note = client.get_note(id="BV4pBJywx2")
 
@@ -26,22 +24,26 @@ venue_group = client.get_group(venue_id)
 
 client.impersonate(venue_id)
 
-profiles = get_profiles(
-    client, ["~António_Leitão2", "~Buddha_Nath_Sharma1", "~Dylan_Peek1"]
-)
-
-for profile in profiles:
-    user_email = profile.get_preferred_email()
-    print(user_email)
-
-raise "heck"
-
 # notes = client.get_all_notes(invitation=f"{venue_id}/-/Submission")
 notes = client.get_all_notes(content={"venueid": venue_id})
 
 camera_ready_notes = []
 
 print(len(notes))
+
+for note in notes:
+    authors = note.content["authorids"]["value"]
+
+    profiles = get_profiles(client, authors)
+
+    print(f"{note.number:02d}")
+
+    for profile in profiles:
+        user_email = profile.get_preferred_email()
+        print("\t", user_email)
+
+raise "heck"
+
 
 for note in notes:
     camera_ready_invitation = (
