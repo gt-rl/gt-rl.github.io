@@ -33,10 +33,11 @@ print(len(notes))
 
 for note in notes:
     authors = note.content["authorids"]["value"]
+    title = note.content["title"]["value"]
 
     profiles = get_profiles(client, authors)
 
-    print(f"{note.number:02d}")
+    print(f"{note.number:02d}: {title}")
 
     for profile in profiles:
         user_email = profile.get_preferred_email()
